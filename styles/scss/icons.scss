@@ -1,0 +1,60 @@
+[class^="icon-"], [class*=" icon-"] {
+font-family: FontAwesome;
+font-weight: normal;
+font-style: normal;
+text-decoration: inherit;
+display: inline;
+width: auto;
+height: auto;
+line-height: normal;
+vertical-align: baseline;
+background-image: none!important;
+background-position: 0 0;
+background-repeat: repeat;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+display: inline-block;
+width: 14px;
+height: 14px;
+margin-top: 1px;
+line-height: 14px;
+vertical-align: text-top;
+background-image: url("../img/glyphicons-halflings.png");
+background-position: 14px 14px;
+background-repeat: no-repeat;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+
+a [class^="icon-"], a [class*=" icon-"] {
+display: inline-block;
+}
+
+.icon-envelope:before {
+content: "\f003";
+}
+
+.icon-twitter:before {
+content: "\f099";
+}
+
+.icon-pinterest:before {
+content: "\f0d2";
+}
+
+.icon-phone:before {
+content: "\f095";
+}
+
+.icon-facebook:before {
+content: "\f09a";
+}
+
+.icon-angle-up:before {
+content: "\f106";
+}
