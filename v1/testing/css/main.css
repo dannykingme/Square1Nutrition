@@ -1,0 +1,141 @@
+
+
+/* ==========================================================================
+   Danny King's custom styles
+   ========================================================================== */
+   
+html, html a {
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+}
+
+body {
+	font-family: "SourceSansPro",Helvetica,Arial,sans-serif;
+	font-weight: 200;
+	font-size: 20px;
+	line-height: 26px;
+	color: #eee;
+	background: url(../img/bkg.jpg);
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+.backboard {
+	background: url(../img/cover.jpg);
+	position: absolute;
+	width: 100%;
+	height: 2200px;
+	top: 120%;
+}
+.cover-top {
+	top: -25px;
+	left: 0;
+	position: absolute;
+	height: 1200px;
+	width: 100%;
+}
+.cover-btm {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 1200px;
+    width: 100%;
+}
+.cover-one {
+	z-index: 3;
+	position: relative;
+	height: 10px;
+	background: url(../img/cover.jpg);
+}
+.cover-two {
+	z-index: 2;
+	position: relative;
+	height: 13px;
+	background: url(../img/cover-top.png) repeat-x;
+	background-position: top left;
+}
+.cover-three {
+	z-index: 1;
+	position: relative;
+	height: 100%;
+	background: url(../img/cover-btm.png), -webkit-linear-gradient(top, transparent 50%,rgba(0, 0, 0, 0.22) 100%);
+	background-repeat: repeat-x, no-repeat;
+	background-position: bottom left, center;
+}
+.cover-four {
+	z-index: 4;
+	position: relative;
+	height: 1200px;
+	background: url(../img/cover.jpg);
+}
+.top-logo {
+	margin: 13% 0
+}
+.mission {
+	height: 0;
+}
+.mission .mission-type {
+	z-index: 6;
+	position: relative;
+	top: 0;
+	margin-top: 200px;
+}
+/* .signup{
+	top: -400px;
+	position: relative;
+}
+#mc_embed_signup {
+	color: #fff;
+	background: transparent;
+	clear: left;
+	font: 14px Helvetica, Arial, sans-serif;
+}
+#mc_embed_signup .email {
+	background: rgba(0, 0, 0, 0.11);
+	border: transparent;
+	box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.09), 10px 10px 10px rgba(0, 0, 0, 0.11) inset;
+}
+#mc_embed_signup .button {
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22) !important;
+}
+#mc_embed_signup .button:hover {
+	background: rgba(255, 255, 255, 0.11) !important;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.33) !important;
+}
+#mc_embed_signup .button:active {
+	background: rgba(255, 255, 255, 0.07) !important;
+	box-shadow: none !important;
+} */
+
+.about {
+	z-index: 4;
+	top: -400px;
+	position: relative;
+	margin-top: 200px;
+}
+.photos, .bio{
+	margin-top: 200px;
+}
+.photo1 {
+	position: absolute;
+	top: 603px;
+	left: 29px;
+}
+.photo2 {
+	position: absolute;
+	top: 650px;
+	left: 0;
+}
+.services {
+	top: -400px;
+	position: relative;
+	z-index: 4;
+	margin-top:100px;
+}
+.consulting img, .coaching img {
+	border-radius: 110px;
+}
+.coaching {
+	margin-top: 50px;
+}
