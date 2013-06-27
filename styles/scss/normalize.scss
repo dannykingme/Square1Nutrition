@@ -96,14 +96,12 @@ html {
         font-size: 100%; // 1
     }
         background: $background;
-        color: $color;
     -webkit-text-size-adjust: 100%; // 2
     -ms-text-size-adjust: 100%; // 2
 }
 
 // Addresses font-family inconsistency between 'textarea' and other form elements.
 
-html,
 button,
 input,
 select,
@@ -113,9 +111,9 @@ textarea {
 
 // Addresses margins handled incorrectly in IE6/7
 
-body {
-    margin: 0;
-}
+//body {
+//    margin: 0;
+//}
 
 // =============================================================================
 // Links

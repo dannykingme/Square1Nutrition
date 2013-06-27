@@ -161,13 +161,13 @@ $(document).ready(function () {
         })
     })
 });
-$(window).scroll(function () {
-    if ($(window).scrollTop() <= 100) {
-        $(".rdy-logo").fadeIn("slow")
-    } else {
-        $(".rdy-logo").fadeOut("fast")
-    }
-});
+//$(window).scroll(function () {
+//    if ($(window).scrollTop() <= 100) {
+//        $(".rdy-logo").fadeIn("slow")
+//    } else {
+//        $(".rdy-logo").fadeOut("fast")
+//    }
+//});
 (function (a, c) {
     var b = (function () {
         var d = c(a.documentElement),
@@ -220,3 +220,4 @@ $(document).ready(function () {
         $("#tweet").html(e[0].text)
     })
 })
+skrollr.init();

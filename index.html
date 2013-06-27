@@ -28,20 +28,19 @@
 		<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 		<![endif]-->
 		<div id="wrapper1">
-			<div class="intro row">
-				<img src="img/top-logo.png" alt="" class="top-logo" />
+			<div class="intro" data-0="height:800px;" data-500="height:0;">
 				<div class="intro-top"></div>
 				<div class="intro-btm"></div>
 				<a href="#skip" class="rdy-logo">
 					<span class="rdy-go">continue</span>
 				</a>
 			</div>
-			<div class="mission">
+			<div class="mission" id="skip">
 				<div class="statement">
 					<img src="img/mission.png" alt="" />
 				</div>
 			</div>
-			<div class="about" id="skip">
+			<div class="about">
 				<h2>Meet Jennifer, your personal nutritionist</h2>
 				<div class="bio">
 					<p><span>My passion is healing.</span> My focus has always been encouraging the people around me to find their higher purpose, to recognize their gifts and their beauty; to be the best version of themselves.</p>
@@ -158,6 +157,9 @@
 			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+		<script type="text/javascript">
+		    skrollr.init();
 		</script>
 	</body>
 </html>
