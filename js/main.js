@@ -2,11 +2,12 @@ function thirty_pc() {
     var height = $(window).height();
     var thirtypc = (105 * height) / 100;
     thirtypc = parseInt(thirtypc) + 'px';
-    $(".contact").css('height', thirtypc)
+    $(".intro").css('height', thirtypc);
+    $(".contact").css('height', thirtypc);
 }
 $(document).ready(function () {
     thirty_pc();
-    $(window).bind('resize', thirty_pc)
+    $(window).bind('resize', thirty_pc);
 });
 $(document).ready(function () {
     $('body').smoothScroll(600);
@@ -138,7 +139,7 @@ $(document).ready(function () {
                 }]
             }]
         };
-        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp)
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
     }
     $(".phone-btn").popover({
         placement: "right",
@@ -150,16 +151,16 @@ $(document).ready(function () {
         title: "We'd love to hear from you",
         content: "1.630.699.1918"
     });
-    $(".beam-me-up").hide();
+    $("#top").hide();
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > 100) {
-                $('.beam-me-up').fadeIn(1000)
+                $('#top').fadeIn(1000);
             } else {
-                $('.beam-me-up').fadeOut()
+                $('#top').fadeOut();
             }
-        })
-    })
+        });
+    });
 });
 //$(window).scroll(function () {
 //    if ($(window).scrollTop() <= 100) {
@@ -174,13 +175,13 @@ $(document).ready(function () {
             f = c(a.body),
             e;
         if (d.scrollTop()) {
-            return d
+            return d;
         } else {
             e = f.scrollTop();
             if (f.scrollTop(e + 1).scrollTop() == e) {
-                return d
+                return d;
             } else {
-                return f.scrollTop(e)
+                return f.scrollTop(e);
             }
         }
     }());
@@ -195,12 +196,12 @@ $(document).ready(function () {
                     b.stop().animate({
                         scrollTop: e.offset().top
                     }, d, function () {
-                        location.hash = g
-                    })
+                        location.hash = g;
+                    });
                 }
             }
-        }).end()
-    }
+        }).end();
+    };
 }(document, jQuery));
 $(document).ready(function () {
     $(".twitter-btn").popover({
@@ -213,11 +214,10 @@ $(document).ready(function () {
         html: true,
         title: "Jennifer just tweeted:",
         content: function () {
-            return $("#tweet").html()
+            return $("#tweet").html();
         }
     });
     $.getJSON("https://api.twitter.com/1/statuses/user_timeline/sq1_nutrition.json?count=1&include_rts=1&callback=?", function (e) {
-        $("#tweet").html(e[0].text)
-    })
-})
-skrollr.init();
+        $("#tweet").html(e[0].text);
+    });
+});
