@@ -4,6 +4,7 @@
 @import "icons.scss";
 @import "mixins.scss";
 @import "mapui.scss";
+@import "animations";
 
 $orange: #e84;
 
@@ -19,6 +20,7 @@ body {
   padding-bottom: 0;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   text-decoration: none;
+  -webkit-backface-visibility: hidden;
 }
 
 a {
@@ -71,10 +73,15 @@ span {
 
 .intro {
 
+
+
+
+}
+
+.opening {
   background-image: url(../../img/bkg-sm.png);
   overflow: hidden;
   position: relative;
-
 }
 
 .shadow {
@@ -82,6 +89,23 @@ span {
   height: 100%;
   position: absolute;
   @include grad2 (rgba(144,21,5,0),rgba(144,21,5,0.21));
+
+  box-shadow: 0 -55px 100px rgba(0, 0, 0, 0.13) inset;
+  width: 200%;
+  margin-left: -50%;
+
+  /* &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    height: 13px;
+    width: 100%;
+    background-image: url(../../img/rip.png);
+    background-position-y: 13px;
+
+  }*/
 }
 
 .logo {
@@ -92,6 +116,11 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 377px;
+
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  -webkit-animation-delay: 600ms;
 }
 
 .intro-top {
