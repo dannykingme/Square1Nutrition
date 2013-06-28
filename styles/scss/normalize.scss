@@ -184,13 +184,6 @@ abbr[title] {
     border-bottom: 1px dotted;
 }
 
-// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
-
-b,
-strong {
-    font-weight: bold;
-}
-
 @if $legacy_support_for_ie {
     blockquote {
         margin: 1em 40px;

@@ -45,3 +45,23 @@
     font-style: normal;
 
 }
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../../fonts/Museo100-Regular.eot');
+    src: local('☺'), url('../../fonts/Museo100-Regular.woff') format('woff'),
+    url('../../fonts/Museo100-Regular.ttf') format('truetype'),
+    url('../../fonts/Museo100-Regular.svg') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../../fonts/Museo300-Regular.eot');
+    src: local('☺'), url('../../fonts/Museo300-Regular.woff') format('woff'),
+    url('../../fonts/Museo300-Regular.ttf') format('truetype'),
+    url('../../fonts/Museo300-Regular.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
