@@ -89,11 +89,13 @@ span {
   width: 100%;
   height: 100%;
   position: absolute;
-  @include grad2 (rgba(144,21,5,0),rgba(144,21,5,0.21));
-
-  box-shadow: 0 -55px 100px rgba(0, 0, 0, 0.13) inset;
   width: 200%;
   margin-left: -50%;
+
+  @include grad2 (rgba(144,21,5,0),rgba(144,21,5,0.21));
+
+  //@include box-shadow (inset 0 -13px 21px  rgba(0, 0, 0, 0.34),
+  //                     inset 0 -34px 55px darken($orange, 55%));
 
   /* &:before {
     content: "";
@@ -122,6 +124,7 @@ span {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: fadeInUp;
   -webkit-animation-delay: 600ms;
+
 }
 
 .intro-top {
@@ -143,13 +146,15 @@ span {
     width: 100%;
     background-image: url(../../img/rip.png);
     background-position-y: 0px;
+
   }
 
 }
 
 .intro-btm {
 
-  width: 100%;
+  width: 120%;
+  left: -10%;
   height: 100%;
   display: block;
   background-image: url(../../img/cover.jpg);
@@ -157,7 +162,11 @@ span {
   top: 100%;
   z-index: 1;
 
+  @include box-shadow (0 -13px 21px  rgba(0, 0, 0, 0.21),
+                       0 -8px 34px darken($orange, 21%));
+
   &:before {
+
     content: "";
     position: absolute;
     display: block;
@@ -167,6 +176,7 @@ span {
     width: 100%;
     background-image: url(../../img/rip.png);
     background-position-y: -13px;
+
   }
 
 }
@@ -181,8 +191,10 @@ span {
   background-image: url(../../img/top-logo.png);
 
   &:hover .rdy-go {
+
     opacity: 1;
     top: 100%;
+
   }
 
 }
@@ -406,12 +418,6 @@ span {
   position: relative;
   margin: 21% 0;
 
-  .preview {
-
-    float: left;
-
-  }
-
 }
 
 .detox {
@@ -421,31 +427,36 @@ span {
 
 }
 
+.raz {
+
+  width: 33%;
+  height: 100%;
+  background-image: url(../../img/raz.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+
+}
+
+.raz-s {
+
+  width: 33%;
+  height: 100%;
+  background-image: url(../../img/raz-s.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+
+}
+
 .imp {
 
   width: 66%;
   padding-left: 33%;
-
-}
-
-.preview {
-
-   width: 33%;
-   display: inline-block;
-
-  img {
-
-    vertical-align: inherit;
-    height: auto;
-    max-width: 100%;
-    border: 0;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-
-    @include box-shadow (1px 2px 0 #fff,3px 3px 9px rgba(0,0,0,0.33));
-
-  }
 
 }
 
