@@ -82,6 +82,7 @@ span {
   background-image: url(../../img/bkg-sm.png);
   overflow: hidden;
   position: relative;
+  height: 100%;
 }
 
 .shadow {
@@ -218,8 +219,7 @@ span {
 
 .mission {
 
-  margin: 55% 0;
-  padding: 0 13%;
+  margin: 21% 13%;
 
   h1 {
 
@@ -227,15 +227,8 @@ span {
     font-family: 'Museo', 'SourceSans', sans-serif;
     font-weight: 100;
     line-height: 1.1em;
-    color: #eee;
 
   }
-
-}
-
-.statement img {
-
-  max-width: 100%;
 
 }
 
@@ -262,28 +255,28 @@ span {
 
   position: relative;
 
-  img {
-
-    position: absolute;
-    height: auto;
-    width: auto;
-    vertical-align: middle;
-    border: 0;
-
-  }
-
 }
 
 .photo1 {
 
+  display: block;
+  position: absolute;
   top: 0;
+  width: 474px;
+  height: 365px;
+  background-image: url(../../img/photo1.png);
 
 }
 
 .photo2 {
 
-  left: 30px;
-  top: 0;
+  left: 34px;
+  top: -89px;
+  display: block;
+  position: absolute;
+  width: 392px;
+  height: 504px;
+  background-image: url(../../img/photo2.png);
 
 }
 
