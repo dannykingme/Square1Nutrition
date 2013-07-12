@@ -1,10 +1,13 @@
-@import "normalize.scss";
-@import "h5bp.scss";
+@import "normal.scss";
 @import "fonts.scss";
 @import "icons.scss";
 @import "mixins.scss";
 @import "mapui.scss";
 @import "animations";
+@import "mob";
+@import "tab";
+@import "top";
+@import "ret";
 
 $orange: #e84;
 
@@ -14,7 +17,7 @@ body {
   height: 100%;
   font-family: "SourceSans", sans-serif;
   font-weight: 200;
-  font-size: 1.1em;
+  font-size: 1.4em;
   line-height: 1.6em;
   color: #d1d2d3;
   padding-bottom: 0;
@@ -39,8 +42,6 @@ a {
 h1, h2, h3, h4, h5, h6 {
 
   text-rendering: optimizelegibility;
-  font-family: inherit;
-  color: inherit;
 
 }
 
@@ -266,35 +267,41 @@ span {
 .photos {
 
   position: relative;
+  width: 40%;
 
 }
 
 .photo1 {
 
+  width: 100%;
+  float: left;
   display: block;
-  position: absolute;
-  top: 0;
-  width: 474px;
+  width: 100%;
   height: 365px;
   background-image: url(../../img/photo1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
 
 }
 
 .photo2 {
 
-  left: 34px;
-  top: -89px;
+  width: 100%;
   display: block;
-  position: absolute;
-  width: 392px;
+  position: relative;
   height: 504px;
   background-image: url(../../img/photo2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
 
 }
 
 .bio {
 
-  width: 66%;
+  width: 60%;
+  float: right;
 
 
   p {
@@ -364,7 +371,7 @@ span {
 
 .photos, .bio {
 
-  float: left;
+  //float: left;
 
 }
 
@@ -408,7 +415,7 @@ span {
 
   min-height: 250px;
   position: relative;
-  margin-bottom: 21%;
+  margin-bottom: 8%;
 
 }
 
@@ -416,24 +423,25 @@ span {
 
   min-height: 250px;
   position: relative;
-  margin: 21% 0;
+  margin: 8% 0;
 
 }
 
 .detox {
 
-  width: 66%;
+  width: 60%;
   display: inline-block;
 
 }
 
 .raz {
 
-  width: 33%;
+  width: 40%;
   height: 100%;
   background-image: url(../../img/raz.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   display: inline-block;
   position: absolute;
   right: 0;
@@ -442,20 +450,47 @@ span {
 
 .raz-s {
 
-  width: 33%;
+  width: 40%;
   height: 100%;
   background-image: url(../../img/raz-s.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   display: inline-block;
   position: absolute;
   right: 0;
 
 }
 
+.strw {
+
+  width: 33%;
+  height: 100%;
+  background-image: url(../../img/strw.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+
+}
+
+.strw-s {
+
+  width: 33%;
+  height: 100%;
+  background-image: url(../../img/strw-s.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+
+}
+
 .imp {
 
-  width: 66%;
+  width: 60%;
   padding-left: 33%;
 
 }
@@ -648,34 +683,14 @@ span {
 
 }
 
-.map-pusher {
+.mapCurtain {
 
-  overflow: hidden;
-  position: relative;
-  z-index: 9;
   width: 100%;
-  background: url(../../img/contact.png),url(../../img/cover.jpg);
-  background-repeat: no-repeat,repeat;
-  background-position: center,top left;
-
-  a {
-
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-  }
-
-}
-
-.map-tear {
-
-  position: relative;
-  z-index: 8;
-  width: 100%;
-  height: 13px;
-  background: url(../../img/cover-top.png) repeat-x;
+  height: 100%;
+  top: -100%;
+  position: absolute;
+  background: red;
+  z-index: 5;
 
 }
 
