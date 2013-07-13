@@ -9,17 +9,27 @@
 @import "top";
 @import "ret";
 
-$orange: #e84;
+// Base Orange Palette
+
+  $orange: #e84;
+
+// Base Light Color
+
+  $light: #bababe;
+
+// White (not pure white)
+
+  $white: #fafefe;
 
 body {
   margin: 0;
-  background-color: #fefefe;
+  background-color: $white;
   height: 100%;
   font-family: "SourceSans", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 1.4em;
   line-height: 1.6em;
-  color: #d1d2d3;
+  color: $light;
   padding-bottom: 0;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
   text-decoration: none;
@@ -67,23 +77,25 @@ span {
 
 #wrapper {
 
-  background-image: url(../../img/bkg.svg);
   overflow: hidden;
+  background: url(../../img/bkg.svg);
 
 }
 
 .intro {
 
-
-
+  background: url(img/bkg.svg) 1px;
 
 }
 
 .opening {
+
   background-image: url(../../img/bkg-sm.png);
   overflow: hidden;
   position: relative;
   height: 100%;
+  -webkit-mask: url(../../img/rip5.svg) repeat-x bottom;
+
 }
 
 .shadow {
@@ -128,111 +140,10 @@ span {
 
 }
 
-.intro-top {
-
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  top: -102%;
-  background-image: url(../../img/cover.jpg);
-
-  &:before {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -13px;
-    left: 0;
-    height: 13px;
-    width: 100%;
-    background-image: url(../../img/rip.png);
-    background-position-y: 0px;
-
-  }
-
-}
-
-.intro-btm {
-
-  width: 120%;
-  left: -10%;
-  height: 100%;
-  display: block;
-  background-image: url(../../img/cover.jpg);
-  position: absolute;
-  top: 100%;
-  z-index: 1;
-
-  @include box-shadow (0 -13px 21px  rgba(0, 0, 0, 0.21),
-                       0 -8px 34px darken($orange, 21%));
-
-  &:before {
-
-    content: "";
-    position: absolute;
-    display: block;
-    top: -13px;
-    left: 0;
-    height: 13px;
-    width: 100%;
-    background-image: url(../../img/rip.png);
-    background-position-y: -13px;
-
-  }
-
-}
-
-.rdy-logo {
-
-  display: block;
-  margin: 0 auto;
-  width: 447px;
-  height: 447px;
-  text-decoration: none;
-  background-image: url(../../img/top-logo.png);
-
-  &:hover .rdy-go {
-
-    opacity: 1;
-    top: 100%;
-
-  }
-
-}
-
-.rdy-go {
-
-  color: #fff;
-  position: relative;
-  bottom: 0;
-  left: 0;
-  top: 115%;
-  opacity: 0;
-  -webkit-transition: 1s all;
-  -moz-transition: 1s all;
-  -ms-transition: 1s all;
-  -o-transition: 1s all;
-  transition: 1s all;
-  font-weight: 300;
-
-}
-
-.rdy-go:after {
-
-  content: "\f0dd";
-  font-family: FontAwesome;
-  text-decoration: none;
-  position: absolute;
-  top: 50%;
-  left: 43%;
-
-}
-
-
-
 .mission {
 
-  margin: 21% 13%;
+  margin: 0 13%;
+  padding: 21% 0;
 
   h1 {
 
@@ -258,7 +169,7 @@ span {
     font-weight: 200;
     margin: 0;
     margin-bottom: 8%;
-    color: #f1f2f3;
+    color: $white;
 
   }
 
@@ -325,7 +236,7 @@ span {
     background-repeat: repeat-x;
     border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
     text-shadow: 0 -1px 0;
-    color: #fff;
+    color: $white;
 
     @include b-rad (4px, 4px, 4px, 4px);
 
@@ -336,7 +247,7 @@ span {
 
     &:hover {
 
-      color: #fff;
+      color: $white;
       text-decoration: none;
       background-color: darken($orange, 8%);
       background-position: 0 -15px;
@@ -351,7 +262,7 @@ span {
 
       background-image: none;
       outline: 0;
-      color: #fff;
+      color: $white;
       background-color: darken($orange, 8%);
 
       @include box-shadow ( inset 0 2px 4px rgba(100,0,0,0.333),
@@ -382,24 +293,11 @@ span {
   min-height: 600px;
   background: rgba(255, 255, 255, 0.03);
 
-  h3 {
-
-    line-height: 2em;
-    font-size: 1.4em;
-    color: #f1f2f3;
-    font-weight: 400;
-    margin: 0;
-
-  }
-
   h2 {
 
-    margin: 0;
-    margin-bottom: 13%;
-    color: #f1f2f3;
+    color: $white;
     font-weight: 200;
-    font-size: 90px;
-    line-height: 100px;
+    font-size: 2em;
 
   }
 
@@ -499,7 +397,7 @@ span {
 
   padding: 0 13%;
   margin-bottom: 34%;
-  color: #aaa;
+  color: $light;
   position: relative;
 
   &:before, &:after {
@@ -517,7 +415,7 @@ span {
     font-weight: 200;
     margin: 0;
     margin-bottom: 8%;
-    color: #f1f2f3;
+    color: $white;
 
   }
 
@@ -714,7 +612,7 @@ span {
 
  display: inline-block;
  width: 500px;
- background: #fff;
+ background: $white;
  padding: 30px 0;
  float: left;
 
@@ -773,7 +671,7 @@ span {
     color: #555;
     vertical-align: middle;
 
-    background-color: #fff;
+    background-color: $white;
     border: 1px solid #ccc;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
     -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
@@ -825,7 +723,7 @@ span {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color: #fff;
+    color: $white;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     background-color: #5bb75b;
     background-repeat: repeat-x;
@@ -843,7 +741,7 @@ span {
       -moz-transition: background-position .1s linear;
       -o-transition: background-position .1s linear;
       transition: background-position .1s linear;
-      color: #fff;
+      color: $white;
       background-color: #51a351;
 
     }
@@ -852,7 +750,7 @@ span {
 
       background-image: none;
       outline: 0;
-      color: #fff;
+      color: $white;
       background-color: #51a351;
 
       @include box-shadow ( inset 0 2px 4px rgba(0,0,0,0.15),
@@ -1047,7 +945,7 @@ span {
   text-align: center;
 
   a {
-    color: #fff;
+    color: $white;
     text-decoration: none;
     font-size: 40px;
     opacity: .25;
@@ -1092,7 +990,7 @@ span {
   display: none;
   width: 236px;
   padding: 1px;
-  background-color: #fff;
+  background-color: $white;
   border: 1px solid #ccc;
   border: 1px solid rgba(0,0,0,0.2);
   -webkit-background-clip: padding-box;
@@ -1139,7 +1037,7 @@ border-style: solid;
 top: 50%;
 left: -10px;
 margin-top: -10px;
-border-right-color: #fff;
+border-right-color: $white;
 border-width: 10px 10px 10px 0;
 }
 
