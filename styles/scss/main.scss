@@ -22,36 +22,49 @@
   $white: #fafefe;
 
 body {
-  margin: 0;
-  background-color: $white;
-  height: 100%;
-  font-family: "SourceSans", sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
-  line-height: 1.6em;
-  color: $light;
-  padding-bottom: 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  text-decoration: none;
+
+             color : $light;
+            margin : 0;
+            height : 100%;
+         font-size : 1.5em;
+       line-height : 1.5em;
+       font-family : "SourceSans", sans-serif;
+       font-weight : 400;
+       text-shadow : 1px 1px 1px rgba(0,0,0,.89);
+    padding-bottom : 0;
+   text-decoration : none;
+  background-color : $white;
+
   -webkit-backface-visibility: hidden;
+
 }
 
 a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-  }
-  &:active {
-    text-decoration: none;
-  }
-  &:focus {
-    text-decoration: none;
-  }
+             text-decoration: none;
+  &:hover  { text-decoration: none; }
+  &:active { text-decoration: none; }
+  &:focus  { text-decoration: none; }
+
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
 
-  text-rendering: optimizelegibility;
+h1 {
+
+  font-size   : 4em;
+  font-family : 'Museo', 'SourceSans', sans-serif;
+  font-weight : 100;
+  line-height : 1;
+
+}
+
+h2 {
+
+  color       : $white;
+  font-weight :    200;
+  font-size   :    2.8em;
+  line-height :    1em;
+  margin      : .5em 0;
 
 }
 
@@ -63,8 +76,10 @@ p {
 }
 
 strong {
+
   font-weight: 300;
   color: #eee;
+
 }
 
 span {
@@ -145,15 +160,6 @@ span {
   margin: 0 13%;
   padding: 21% 0;
 
-  h1 {
-
-    font-size: 4em;
-    font-family: 'Museo', 'SourceSans', sans-serif;
-    font-weight: 100;
-    line-height: 1.1em;
-
-  }
-
 }
 
 .about {
@@ -161,17 +167,6 @@ span {
   padding: 0 13%;
   margin: 34% 0;
   min-height: 600px;
-
-  h2 {
-
-    font-size: 90px;
-    line-height: 100px;
-    font-weight: 200;
-    margin: 0;
-    margin-bottom: 8%;
-    color: $white;
-
-  }
 
 }
 
@@ -211,8 +206,9 @@ span {
 
 .bio {
 
-  width: 60%;
   float: right;
+  padding: 3em 0;
+  width: 60%;
 
 
   p {
@@ -292,14 +288,6 @@ span {
   margin: 21% 0;
   min-height: 600px;
   background: rgba(255, 255, 255, 0.03);
-
-  h2 {
-
-    color: $white;
-    font-weight: 200;
-    font-size: 2em;
-
-  }
 
   p {
 
@@ -405,17 +393,6 @@ span {
     display: table;
     line-height: 0;
     content: "";
-
-  }
-
-  h2 {
-
-    font-size: 90px;
-    line-height: 100px;
-    font-weight: 200;
-    margin: 0;
-    margin-bottom: 8%;
-    color: $white;
 
   }
 
