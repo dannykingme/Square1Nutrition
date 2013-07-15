@@ -13,13 +13,17 @@
 
   $orange: #e84;
 
+// Base Green Palette
+
+  $green: #62c462;
+
 // Base Light Color
 
   $light: #bababe;
 
 // White (not pure white)
 
-  $white: #fafefe;
+  $white: #fefefe;
 
 body {
 
@@ -40,6 +44,7 @@ body {
 }
 
 a {
+  color: $white;
              text-decoration: none;
   &:hover  { text-decoration: none; }
   &:active { text-decoration: none; }
@@ -102,7 +107,8 @@ span {
   overflow: hidden;
   position: relative;
   height: 100%;
-  -webkit-mask: url(../../img/rip5.svg) repeat-x bottom;
+  -webkit-mask: url(../../img/rip.svg) repeat-x;
+  -webkit-mask-position-y: 100%;
 
 }
 
@@ -276,18 +282,57 @@ span {
   min-height: 600px;
   background: rgba(255, 255, 255, 0.03);
 
+  a {
+
+    display: inline-block;
+    padding: 1em 2em;
+    border: 1px solid $white;
+    border-radius: 4px;
+    margin-top: 1em;
+    text-shadow: none;
+
+    -webkit-transition: 210ms color, 210ms background, 210ms margin;
+
+    &:hover {
+
+      background-color: $white;
+      color: #333;
+
+      -webkit-transition: 340ms color, 340ms background, 210ms margin;
+      -webkit-transform: translate(0,-1px);
+
+    }
+
+    &:active, &:focus {
+
+      color: #333;
+      background-color: $white;
+      box-shadow: 0 2px 2px darken($white, 21%) inset;
+
+      -webkit-transform: translate(0,0);
+
+    }
+
+  }
+
 }
 
-.consulting {
+.serv1 {
 
   min-height: 250px;
   position: relative;
   padding: 8% 0;
   margin: 13% 0;
 
+  .ico {
+
+    right: 0;
+
+  }
+
 }
 
-.coaching {
+.serv2 {
 
   min-height: 250px;
   position: relative;
@@ -298,75 +343,81 @@ span {
 
 .detox {
 
-  width: 40%;
+  width: 55%;
   float: left;
 
 }
 
-.raz {
+.glass {
 
-  width: 60%;
-  height: 100%;
-  background-image: url(../../img/raz.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: inline-block;
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: -webkit-linear-gradient(top, darken($white,5%) 0%,darken($white, 8%) 100%);
+  -webkit-mask: url(../../img/sprite5.svg);
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: 100% 0;
+
+}
+
+.juice {
+
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: -webkit-linear-gradient(top, $orange 0%,darken($orange, 13%) 100%);
+  -webkit-mask: url(../../img/sprite5.svg);
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: 100% 100%;
   position: absolute;
+  top: 0;
   right: 0;
-  top: 0;
+  -webkit-transform-origin-y: 91%;
 
 }
 
-.raz-s {
+.cal {
 
-  width: 60%;
-  height: 100%;
-  background-image: url(../../img/raz-s.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: -webkit-linear-gradient(top, darken($white,5%) 0%,darken($white, 8%) 100%);
+  -webkit-mask: url(../../img/sprite5.svg);
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: 0 0;
 
 }
 
-.strw {
+.day {
 
-  width: 60%;
-  height: 100%;
-  background-image: url(../../img/strw.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: inline-block;
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: -webkit-linear-gradient(top, $green 0%,darken($green, 13%) 100%);
+  -webkit-mask: url(../../img/sprite5.svg);
+  -webkit-mask-size: 200%;
+  -webkit-mask-position: 0 100%;
   position: absolute;
-  left: 0;
-  top: 0;
-
-}
-
-.strw-s {
-
-  width: 60%;
-  height: 100%;
-  background-image: url(../../img/strw-s.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: inline-block;
-  position: absolute;
-  left: 0;
   top: 0;
 
 }
 
 .clean {
 
-  width: 40%;
+  width: 55%;
   float: right;
+
+  &:hover a {
+
+    opacity: 1;
+    -webkit-transition: 500ms opacity;
+
+  }
+
+}
+
+.ico {
+
+  position: absolute;
+  top: 0;
+  width: 34%;
+  height: 100%;
 
 }
 
