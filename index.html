@@ -14,7 +14,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icon-iphone-114.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icon-ipad-144.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="touch-icon-ipad-144.png" />
-		<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
 		<script type="text/javascript">
 			<!--
 				if (screen.width <= 700) {
@@ -29,9 +29,9 @@
 		<![endif]-->
 		<div id="wrapper">
 			<div class="intro">
-				<div class="opening" data-top="-webkit-mask-position-y:100%;" data-top-bottom="-webkit-mask-position-y:200%;">
+				<div class="opening" data-top="-webkit-mask-position:0 100%;" data-top-bottom="-webkit-mask-position:0 200%;">
 					<div class="shadow"></div>
-					<div class="logo"></div>
+					<div class="logo" data-top="background-position: 50% 50%;" data-top-bottom="background-position: 50% -144%;"></div>
 				</div>
 			</div>
 			<div class="mission" id="skip" data-0-center-center="color:rgb(136, 136, 136);" data-200-center-center="color:rgb(255, 255, 255);">
@@ -46,16 +46,24 @@
 					<p>This path into a healthy lifestyle has been long and difficult at times. I feel a deep compassion for those traveling the same roads through similar circumstances. My journey has uncovered many simple, yet unique health practices.</p>
 					<p>Today, I am the healthiest version of myself. With my certification from both The Institute for Integrative Nutrition and The American Association of Drugless Practitioners (AADP) my goal is to help others find the same fulfillment in their own lives.</p>
 				</div>
-				<div class="photos" data-bottom-top="opacity:.34;" data-center="opacity:1;" data--200-top="opacity:1;" data-top-bottom="opacity:0;">
-					<div class="photo1" data-bottom-top="transform:translate(0px,377px)scale(.55,.55);" data-center="transform:translate(0px,0px)scale(1,1);" data-top-bottom="transform:translate(0px,-144px)scale(1,1);"></div>
-					<div class="photo2" data-bottom-top="transform:translate(0px,233px)scale(.89,.89);" data--200-center="transform:translate(0px,0px)scale(1,1);" data-top="transform:translate(0px,0px)scale(1,1);" data-top-bottom="transform:translate(0px,-34px)scale(1,1);"></div>
+				<div class="photos">
+					<div class="landscape" data-bottom-top="-webkit-transform:translate(-89%,55%)rotate(7deg);" data-center="-webkit-transform:translate(0%,0%)rotate(70deg);" data-top-bottom="-webkit-transform:translate(0%,-34%)rotate(70deg);">
+						<div class="photo">
+							<div class="folds"></div>
+						</div>
+					</div>
+					<div class="portrait" data-bottom-top="-webkit-transform:translate(-144%,34%)rotate(30deg);" data-center="-webkit-transform:translate(0%,0%)rotate(3deg);" data-top-bottom="-webkit-transform:translate(0%,-21%)rotate(4deg);">
+						<div class="photo">
+							<div class="folds"></div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="services">
 				<div class="serv1">
 					<div class="detox">
 						<h2>7 Day Detox</h2>
-						<p>Detoxify your body while gaining a slimmer, healthier physique. Cleanse your system with a customized juicing routine, energize your mind with healthy habits developed just for you, & rejuvenate your spirit with warmhearted, expert counseling. Jen is going to start you at square one and craft a solution specifically for you.</p>
+						<p>Detoxify your body while gaining a slimmer, healthier physique. Cleanse your system with a customized juicing routine, energize your mind with healthy habits developed just for you, &amp; rejuvenate your spirit with warmhearted, expert counseling. Jen is going to start you at square one and craft a solution specifically for you.</p>
 						<a href="#googleMap">Get Started</a>
 					</div>
 					<div class="ico" data-bottom-top="-webkit-transform:rotateY(90deg);opacity:0;" data-bottom-center="-webkit-transform:rotateY(0deg);opacity:1;">
@@ -66,7 +74,7 @@
 				<div class="serv2">
 					<div class="clean">
 						<h2>90 Day Cleanse</h2>
-						<p>Achieve the healthiest version of yourself using Jen's wellness solutions. Build a healthy lifestyle in 6 intensive training sessions, learn why the right foods can revitalize your life, & experience empowerment from strategic encouragements between sessions. Jen will guide you to well being and the 7 Day Detox is included.</p>
+						<p>Achieve the healthiest version of yourself using Jen's wellness solutions. Build a healthy lifestyle in 6 intensive training sessions, learn why the right foods can revitalize your life, &amp; experience empowerment from strategic encouragements between sessions. Jen will guide you to well being and the 7 Day Detox is included.</p>
 						<a href="#googleMap">Get Started</a>
 					</div>
 					<div class="ico" data-bottom-top="-webkit-transform:scale(0,0)rotate(-30deg);" data-bottom-center="-webkit-transform:scale(1,1)rotate(0deg);">
@@ -76,12 +84,40 @@
 				</div>
 			</div>
 			<div class="testimonials">
+				<div id="cbp-qtrotator" class="cbp-qtrotator">
+					<div class="cbp-qtcontent">
+						<img src="images/1.jpg" alt="img01" />
+						<blockquote>
+						  <p>
+						  	I was diagnosed with Fibromyalgia &amp; overwhelmed by the pain. Jen taught me how to manage my conditions and take control of my health. Jen, my family &amp; I are grateful for your expertise, thank you!
+						  </p>
+						  <footer>Sarah, Childcare Specialist</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="images/2.jpg" alt="img02" />
+						<blockquote>
+						  <p>
+						  	Jen has truly changed the way I look at wellness &amp; life in general. I've gained more energy and lost more weight. Her passion for a healthy lifestyle is infectious. I'm excited to continue our journey!
+						  </p>
+						  <footer>Ann, Medical Esthetician</footer>
+						</blockquote>
+					</div>
+					<div class="cbp-qtcontent">
+						<img src="images/3.jpg" alt="img03" />
+						<blockquote>
+						  <p>I've suffered from debilitating migraines for years. Ever since Jen helped improve my diet the migraines have nearly stopped. I'm healthier &amp; I've lost the weight to prove it. Thank you, Jen!</p>
+						  <footer>Angee, Travel Agent</footer>
+						</blockquote>
+					</div>
+				</div>
 				<div class="quote">
 					<h3>You helped me take control</h3>
 					<h3></h3>
 					<blockquote>
-						<p>At 32 I was diagnosed with Arthritis of the Spine &amp; Fibromyalgia. I was overwhelmed by the pain &amp; lack of energy. With Jennifer's help I'm now in-tune with my body's needs &amp; able to manage my conditions.</p>
-						<p>Jennifer, you taught me so much while being so supportive &amp; understanding. My family &amp; I are grateful to have you in our lives! You helped me take control of mine &amp; my family's health. Thank you!</p>
+						<p>
+							I was diagnosed with Fibromyalgia &amp; overwhelmed by the pain. Jen taught me how to manage my conditions and take control of my health. She was always supportive and more than understanding. Jen, my family &amp; I are grateful for your expertise, thank you!
+						</p>
 						<small><span>Sarah D</span> Childcare Specialist<br><cite title="Source Title">Sugar Grove, IL</cite></small>
 					</blockquote>
 				</div>
@@ -103,36 +139,37 @@
 				</div>
 			</div>
 			<div class="contact">
-				<div class="mapCurtain"></div>
-				<div id="googleMap"></div>
-				<div class="contact-options">
-					<div class="mailbox">
-						<form name="htmlform" method="post" action="mailer.php">
-							<fieldset class="mailer">
-							<legend>We want to stay in touch!</legend>
-								<input  type="text" name="name" maxlength="50" size="30" placeholder="What's your name?">
-								<input  type="email" name="email" maxlength="80" size="30" placeholder="And your email?">
-								<textarea  name="message" maxlength="1000" rows="12" placeholder="Okay, how can we help?"></textarea>
-								<button type="submit" class="btn btn-large btn-block btn-success">Send <small><i class="icon-envelope"></i></small></button>
-							</fieldset>
-						</form>
+				<div class="mapCurtain" data-bottom-top="-webkit-mask-position:0 -100%;" data-bottom="-webkit-mask-position:0 0%;">
+					<div id="googleMap"></div>
+					<div class="contact-options">
+						<div class="mailbox">
+							<form name="htmlform" method="post" action="mailer.php">
+								<fieldset class="mailer">
+								<legend>We want to stay in touch!</legend>
+									<input  type="text" name="name" maxlength="50" size="30" placeholder="What's your name?">
+									<input  type="email" name="email" maxlength="80" size="30" placeholder="And your email?">
+									<textarea  name="message" maxlength="1000" rows="12" placeholder="Okay, how can we help?"></textarea>
+									<button type="submit" class="btn btn-large btn-block btn-success">Send <small><i class="icon-envelope"></i></small></button>
+								</fieldset>
+							</form>
+						</div>
+						<a href="http://facebook.com/pages/square-1/294748607303851" class="social fb-btn" target="_blank">
+							<i class="icon-facebook"></i>
+						</a>
+						<a href="https://twitter.com/sq1_nutrition" class="social twitter-btn" target="_blank">
+							<i class="icon-twitter"></i>
+						</a>
+						<a href="http://pinterest.com/sq1nutrition/" class="social pin-btn" target="_blank">
+							<i class="icon-pinterest"></i>
+						</a>
+						<a href="mailto:jen@square1nutrition.com?Subject=Let's%20do%20this!" class="social mail-btn" target="_blank">
+							<i class="icon-envelope"></i>
+						</a>
+						<a class="social phone-btn">
+							<i class="icon-phone"></i>
+						</a>
+						<div id="tweet" style="display:none"></div>
 					</div>
-					<a href="http://facebook.com/pages/square-1/294748607303851" class="social fb-btn" target="_blank">
-						<i class="icon-facebook"></i>
-					</a>
-					<a href="https://twitter.com/sq1_nutrition" class="social twitter-btn" target="_blank">
-						<i class="icon-twitter"></i>
-					</a>
-					<a href="http://pinterest.com/sq1nutrition/" class="social pin-btn" target="_blank">
-						<i class="icon-pinterest"></i>
-					</a>
-					<a href="mailto:jen@square1nutrition.com?Subject=Let's%20do%20this!" class="social mail-btn" target="_blank">
-						<i class="icon-envelope"></i>
-					</a>
-					<a class="social phone-btn">
-						<i class="icon-phone"></i>
-					</a>
-					<div id="tweet" style="display:none"></div>
 				</div>
 			</div>
 			<div id="top">
@@ -159,6 +196,28 @@
 		</script>
 		<script type="text/javascript">
 		    $(window).load(function($){ var s = skrollr.init(); });
+		</script>
+		<script>
+			$( function() {
+				/*
+				- how to call the plugin:
+				$( selector ).cbpQTRotator( [options] );
+				- options:
+				{
+					// default transition speed (ms)
+					speed : 700,
+					// default transition easing
+					easing : 'ease',
+					// rotator interval (ms)
+					interval : 8000
+				}
+				- destroy:
+				$( selector ).cbpQTRotator( 'destroy' );
+				*/
+
+				$( '#cbp-qtrotator' ).cbpQTRotator();
+
+			} );
 		</script>
 	</body>
 </html>
