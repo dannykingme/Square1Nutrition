@@ -819,3 +819,46 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ * Gmap Cleaner 0.1
+ *
+ * Simple callout that selects UI elements in a specified Google Map and hides them.
+ * If your design uses a large Google Map, the default buttons can become an eyesore.
+ * Use this to cleanup a specific Google Map, even hide the Google logo in the corner.
+ *
+ * Simply replace the id selector with the id of the Google Map you wish to cleanup.
+ *
+ * (c) 2013 WTFPL (http://www.wtfpl.net/about/)
+ *
+ * Danny King (dannyking.me)
+ */
+
+
+ $gmap: googleMap; // Change this to match the ID of your Google Map
+
+ ##{$gmap}>div:first-child>div:nth-child(2),
+ ##{$gmap}>div:first-child>div:nth-child(3),
+ ##{$gmap}>div:first-child>div:nth-child(6),
+ ##{$gmap}>div:first-child>div:nth-child(7),
+ ##{$gmap}>div:first-child>div:nth-child(8){display:none!important;}

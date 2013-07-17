@@ -1,30 +1,11 @@
-@import "normal.scss";
-@import "fonts.scss";
-@import "icons.scss";
-@import "mixins.scss";
-@import "mapui.scss";
+@import "normal";
+@import "colors";
+@import "fonts";
+@import "icons";
+@import "mixins";
 @import "animations";
-@import "mob";
-@import "tab";
-@import "top";
-@import "ret";
+@import "responsive";
 @import "qt";
-
-// Base Orange Palette
-
-  $orange: #e84;
-
-// Base Green Palette
-
-  $green: #62c462;
-
-// Base Light Color
-
-  $light: #bababe;
-
-// White (not pure white)
-
-  $white: #fefefe;
 
 body {
 
@@ -35,7 +16,6 @@ body {
        line-height : 1.5em;
        font-family : "SourceSans", sans-serif;
        font-weight : 400;
-       text-shadow : 1px 1px 1px rgba(0,0,0,.89);
     padding-bottom : 0;
    text-decoration : none;
   background-color : $white;
@@ -45,6 +25,7 @@ body {
 }
 
 a {
+
   color: $white;
              text-decoration: none;
   &:hover  { text-decoration: none; }

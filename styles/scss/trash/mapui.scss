@@ -1,0 +1,8 @@
+
+$gmap: googleMap; // Change this to match the ID of your Google Map
+
+##{$gmap}>div:first-child>div:nth-child(2),
+##{$gmap}>div:first-child>div:nth-child(3),
+##{$gmap}>div:first-child>div:nth-child(6),
+##{$gmap}>div:first-child>div:nth-child(7),
+##{$gmap}>div:first-child>div:nth-child(8){display:none!important;}
