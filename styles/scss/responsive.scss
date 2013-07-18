@@ -9,7 +9,13 @@
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
-  /* Styles */
+  .detox, .clean {
+    width: 100%;
+  }
+  .ico {
+    width: 50%;
+    margin: 0 25%;
+  }
 
 }
 
@@ -40,7 +46,13 @@ and (max-device-width : 480px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 
-/* Styles */
+  .detox, .clean {
+    width: 100%;
+  }
+  .ico {
+    width: 50%;
+    margin: 0 25%;
+  }
 
 }
 
@@ -99,7 +111,7 @@ only screen and (                min-resolution: 2dppx) {
 
   body {
 
-    font-size: 1.4em;
+    font-size: 1.3em;
 
   }
 
@@ -111,5 +123,65 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 
 /* Styles */
+
+}
+
+
+
+
+@media (max-width: 480px) { // Landscape phones and down
+
+  .detox, .clean {
+    width: 100%;
+    a {
+     display: block;
+     margin: 8% 0;
+     padding: 1.5em 2em;
+    }
+  }
+  .ico {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+}
+
+@media (max-width: 767px) { // Landscape phone to portrait tablet
+
+  .detox, .clean {
+    width: 100%;
+    a {
+     display: block;
+     margin: 8% 0;
+     padding: 1.5em 2em;
+    }
+  }
+  .ico {
+    width: 50%;
+    margin: 5% 25%;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+
+   .detox, .clean {
+     width: 100%;
+     a {
+      display: block;
+      margin: 8% 0;
+      padding: 1.5em 2em;
+     }
+   }
+   .ico {
+     width: 50%;
+     margin: 5% 25%;
+   }
+
+}
+
+@media (min-width: 1200px) { // Large desktop
+
+/*test*/
 
 }
