@@ -1,12 +1,12 @@
 .about {
   display: table;
-  padding: 0 13%;
-  margin: 13% 0;
+  margin: 13%;
   min-height: 600px;
 }
 .photos {
   position: relative;
   width: 40%;
+  float: left;
   padding-bottom: 40%;
 }
 .portrait {

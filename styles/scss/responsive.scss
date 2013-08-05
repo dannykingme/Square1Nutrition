@@ -2,8 +2,22 @@
 // tests
 }
 @media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+  .about {
+    margin: 13%;
+  }
+  .photos {
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 80%;
+  }
+  .bio {
+    width: 100%;
+    h2 {
+      margin: 0;
+    }
+  }
   .services {
-    margin: 21%;
+    margin: 13%;
   }
   .serv1, .serv2 {
     margin: 13% 0;
@@ -22,6 +36,20 @@
   }
 }
 @media (max-width: 767px) { // Landscape phone to portrait tablet
+  .about {
+    margin: 13%;
+  }
+  .photos {
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 80%;
+  }
+  .bio {
+    width: 100%;
+    h2 {
+      margin: 0;
+    }
+  }
   .services {
     margin: 13%;
   }
@@ -42,20 +70,14 @@
   }
 }
 @media (max-width: 480px) { // Landscape phones and down
-  .services {
+  .about {
     margin: 8%;
   }
-  .detox, .clean {
-    width: 100%;
-    a {
-     display: block;
-     margin: 8% 0;
-     padding: 1.5em 2em;
-    }
+  .photos {
+
   }
-  .ico {
-    width: 50%;
-    margin: 5% 25%;
+  .services {
+    margin: 8%;
   }
 }
 
