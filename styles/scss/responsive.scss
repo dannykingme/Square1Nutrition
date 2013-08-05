@@ -1,105 +1,67 @@
-// ================================== //
-//               iPhone               //
-// ================================== //
-
-
-// Portrait / Landscape
-
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-
+@media (min-width: 1200px) { // Large desktop
+// tests
+}
+@media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+  .services {
+    margin: 21%;
+  }
+  .serv1, .serv2 {
+    margin: 13% 0;
+  }
+  .detox, .clean {
+   width: 100%;
+   a {
+    display: block;
+    margin: 8% 0;
+    padding: 1.5em 2em;
+   }
+  }
+  .ico {
+   width: 60%;
+   margin: 8% 20%;
+  }
+}
+@media (max-width: 767px) { // Landscape phone to portrait tablet
+  .services {
+    margin: 13%;
+  }
+  .serv1, .serv2 {
+    margin: 13% 0;
+  }
   .detox, .clean {
     width: 100%;
+    a {
+     display: block;
+     margin: 8% 0;
+     padding: 1.5em 2em;
+    }
   }
   .ico {
     width: 50%;
-    margin: 0 25%;
+    margin: 5% 25%;
   }
-
 }
-
-// Landscape
-
-@media only screen and (min-width : 321px) {
-
-  /* Styles */
-
-}
-
-// Portrait
-
-@media only screen and (max-width : 320px) {
-
-  /* Styles */
-
-}
-
-
-// ================================== //
-//               iPad                 //
-// ================================== //
-
-
-// Portrait / Landscape
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px) {
-
+@media (max-width: 480px) { // Landscape phones and down
+  .services {
+    margin: 8%;
+  }
   .detox, .clean {
     width: 100%;
+    a {
+     display: block;
+     margin: 8% 0;
+     padding: 1.5em 2em;
+    }
   }
   .ico {
     width: 50%;
-    margin: 0 25%;
+    margin: 5% 25%;
   }
-
-}
-
-// Landscape
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : landscape) {
-
-/* Styles */
-
-}
-
-// Portrait
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (orientation : portrait) {
-
-/* Styles */
-
-}
-
-
-// ================================== //
-//             Desktop                //
-// ================================== //
-
-
-// Desktops / Laptops
-@media only screen and (min-width : 1224px) {
-
-/* Styles */
-
-}
-
-// Large Screens
-@media only screen and (min-width : 1824px) {
-
-/* Styles */
-
 }
 
 // ================================== //
 //              Retina                //
 // ================================== //
-
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -108,80 +70,59 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
   body {
-
     //font-size: 1.3em;
-
   }
-
 }
-
 // iPhone 4
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-
-/* Styles */
-
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+//styles
 }
 
+// ================================== //
+//             Desktop                //
+// ================================== //
 
-
-
-@media (max-width: 480px) { // Landscape phones and down
-
-  .detox, .clean {
-    width: 100%;
-    a {
-     display: block;
-     margin: 8% 0;
-     padding: 1.5em 2em;
-    }
-  }
-  .ico {
-    width: 50%;
-    margin: 5% 25%;
-  }
-
+// LARGE //
+@media only screen and (min-width : 1824px) {
+//styles
+}
+// TOP / LAP //
+@media only screen and (min-width : 1224px) {
+//styles
 }
 
-@media (max-width: 767px) { // Landscape phone to portrait tablet
+// ================================== //
+//               iPad                 //
+// ================================== //
 
-  .detox, .clean {
-    width: 100%;
-    a {
-     display: block;
-     margin: 8% 0;
-     padding: 1.5em 2em;
-    }
-  }
-  .ico {
-    width: 50%;
-    margin: 5% 25%;
-  }
 
+// PORT / LAND //
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+//styles
+}
+// LANDSCAPE //
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+//styles
+}
+// PORTRAIT //
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+//styles
 }
 
-@media (min-width: 768px) and (max-width: 979px) { // Portrait tablet to landscape and desktop
+// ================================== //
+//               iPhone               //
+// ================================== //
 
-   .detox, .clean {
-     width: 100%;
-     a {
-      display: block;
-      margin: 8% 0;
-      padding: 1.5em 2em;
-     }
-   }
-   .ico {
-     width: 60%;
-     margin: 8% 20%;
-   }
-
+// PORT/LAND //
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+//styles
 }
-
-@media (min-width: 1200px) { // Large desktop
-
-/*test*/
-
+// LANDSCAPE //
+@media only screen and (min-width : 321px) {
+//styles
+}
+// PORTRAIT //
+@media only screen and (max-width : 320px) {
+//styles
 }
