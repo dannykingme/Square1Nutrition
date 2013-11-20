@@ -1,0 +1,92 @@
+.about {
+  display: table;
+  margin: 13%;
+  min-height: 600px;
+}
+.photos {
+  position: relative;
+  width: 40%;
+  float: left;
+  padding-bottom: 40%;
+}
+.portrait {
+  .photo {
+    background-image: url(../../img/port.jpg);
+    z-index: 4;
+  }
+  &:before {
+    box-shadow: 3px 5px 8px rgba(0,0,0,.55), 0 -1px 0 #ccc, -1px 0 0 #ccc;
+    top: 1px;
+    -webkit-transform: rotate(-2deg);
+    z-index: 1;
+  }
+  &:after {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.34), 0 -1px 0 #ccc, -1px 0 0 #ccc;
+    z-index: 1;
+  }
+}
+.landscape {
+  top: 1em;
+  -webkit-transform: rotate(70deg);
+  .photo {
+    background-image: url(../../img/land.jpg);
+    z-index: 2;
+  }
+  &:before {
+    box-shadow: 3px 5px 8px rgba(0,0,0,.55), 0 -1px #ccc, -1px 0 0 #ccc;
+    top: 1px;
+    -webkit-transform: rotate(-2deg);
+    z-index: 1;
+  }
+  &:after {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.34), 0 -1px #ccc, 0 1px 0 #ccc;
+    z-index: 1;
+  }
+}
+.portrait, .landscape {
+    position: absolute;
+    width: 75%;
+    padding-bottom: 100%;
+  &:before, &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      margin: 0 auto;
+      border-radius: 4% / 3%;
+  }
+  .photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: 93% 95%;
+      background-position: center;
+  }
+  .folds {
+      width:100%;
+      height:100%;
+      background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 66%,rgba(0,0,0,.34) 100%),
+                        -webkit-linear-gradient(left, rgba(0,0,0,.21) 0%,rgba(0,0,0,0) 34%),
+                        -webkit-linear-gradient(top, rgba(0,0,0,.21) 0%,rgba(0,0,0,0) 34%),
+                        -webkit-linear-gradient(left, rgba(0,0,0,0) 66%,rgba(0,0,0,.21) 100%),
+
+                        -webkit-linear-gradient(left, rgba(255,255,255,0) 66%,rgba(255,255,255,.21) 100%),
+                        -webkit-linear-gradient(top, rgba(255,255,255,0) 66%,rgba(255,255,255,.21) 100%),
+                        -webkit-linear-gradient(left, rgba(255,255,255,.21) 0%,rgba(255,255,255,0) 34%),
+                        -webkit-linear-gradient(top, rgba(255,255,255,.21) 0%,rgba(255,255,255,0) 34%);
+
+      background-size: 50.25% 50%, 50% 50%, 50% 50.25%, 50.25% 50.25%,
+                       50.25% 50%, 50% 50%, 50% 50.25%, 50.25% 50.25%;
+
+      background-position: 0 0, 100% 0, 100% 100%, 0 100%,
+                           0 0, 100% 0, 100% 100%, 0 100%;
+
+      background-repeat: no-repeat;
+  }
+}
+.bio {
+  float: right;
+  width: 60%;
+}
