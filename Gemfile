@@ -12,3 +12,7 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # For Deployment via Github Pages
 gem "middleman-deploy"
+
+# LESS styling language
+gem "therubyracer" #Less dependency
+gem "less"
