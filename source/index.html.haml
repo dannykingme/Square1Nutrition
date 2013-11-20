@@ -1,3 +1,93 @@
 ---
 title: Square 1
 ---
+
+.intro
+  .opening{"data-top" => "-webkit-mask-position:0 100%;", "data-top-bottom" => "-webkit-mask-position:0 200%;"}
+    .shadow
+    .logo{"data-top" => "background-position: 50% 50%;", "data-top-bottom" => "background-position: 50% -144%;"}
+#skip.mission{"data-0-center-center" => "color:rgb(136, 136, 136);", "data-200-center-center" => "color:rgb(255, 255, 255);"}
+  .statement
+    %h1
+      Personal health development with a whole new way of looking at life. This is
+      %strong square one
+      and it starts with love.
+.about
+  .photos
+    .landscape{"data-bottom-top" => "-webkit-transform:translate(-34%,55%)rotate(30deg);", "data-center" => "-webkit-transform:translate(0%,0%)rotate(70deg);", "data-top-bottom" => "-webkit-transform:translate(0%,-34%)rotate(70deg);"}
+      .photo
+        .folds
+    .portrait{"data-bottom-top" => "-webkit-transform:translate(-21%,34%)rotate(13deg);", "data-center" => "-webkit-transform:translate(0%,0%)rotate(3deg);", "data-top-bottom" => "-webkit-transform:translate(0%,-21%)rotate(4deg);"}
+      .photo
+        .folds
+  .bio
+    %h2 Your personal nutritionist
+    %p My passion is healing. My focus has always been encouraging the people around me to find their higher purpose, to recognize their gifts and their beauty; to be the best version of themselves.
+    %p This path into a healthy lifestyle has been long and difficult at times. I feel a deep compassion for those traveling the same roads through similar circumstances. My journey has uncovered many simple, yet unique health practices.
+    %p Today, I am the healthiest version of myself. With my certification from both The Institute for Integrative Nutrition and The American Association of Drugless Practitioners (AADP) my goal is to help others find the same fulfillment in their own lives.
+.services
+  .serv1
+    .ico{"data-bottom-center" => "-webkit-transform:rotateY(0deg);opacity:1;", "data-bottom-top" => "-webkit-transform:rotateY(90deg);opacity:0;"}
+      .glass
+      .juice{"data-200-center" => "-webkit-transform:scale(.55,0);opacity:0;", "data-center" => "-webkit-transform:scale(1,1);opacity:1;"}
+    .detox
+      %h2 7 Day Detox
+      %p Detoxify your body while gaining a slimmer, healthier physique. Cleanse your system with a customized juicing routine, energize your mind with healthy habits developed just for you, & rejuvenate your spirit with warmhearted, expert counseling. Jen is going to start you at square one and craft a solution specifically for you.
+      %a{href: "#googleMap"} Get Started
+  .serv2
+    .ico{"data-bottom-center" => "-webkit-transform:scale(1,1)rotate(0deg);", "data-bottom-top" => "-webkit-transform:scale(0,0)rotate(-30deg);"}
+      .cal
+      .day{"data-200-center" => "opacity:0;", "data-center" => "opacity:1;"}
+    .clean
+      %h2 90 Day Cleanse
+      %p Achieve the healthiest version of yourself using Jen's wellness solutions. Build a healthy lifestyle in 6 intensive training sessions, learn why the right foods can revitalize your life, & experience empowerment from strategic encouragements between sessions. Jen will guide you to well being and the 7 Day Detox is included.
+      %a{href: "#googleMap"} Get Started
+.testimonials
+  #cbp-qtrotator.cbp-qtrotator
+    .cbp-qtcontent
+      %img{alt: "img01", src: "images/1.jpg"}/
+      %blockquote
+        %p I was diagnosed with Fibromyalgia & overwhelmed by the pain. Jen taught me how to manage my conditions and take control of my health. Jen, my family & I are grateful for your expertise, thank you!
+        %footer Sarah, Childcare Specialist
+    .cbp-qtcontent
+      %img{alt: "img02", src: "images/2.jpg"}/
+      %blockquote
+        %p
+          Jen has truly changed the way I look at wellness & life in general. I've gained more energy and lost more weight. Her passion for a healthy lifestyle is infectious. I'm excited to continue our journey!
+        %footer Ann, Medical Esthetician
+    .cbp-qtcontent
+      %img{alt: "img03", src: "images/3.jpg"}/
+      %blockquote
+        %p I've suffered from debilitating migraines for years. Ever since Jen helped improve my diet the migraines have nearly stopped. I'm healthier & I've lost the weight to prove it. Thank you, Jen!
+        %footer Angee, Travel Agent
+.contact
+  .mapCurtain{"data-bottom" => "-webkit-mask-position:0 0%;", "data-bottom-top" => "-webkit-mask-position:0 -100%;"}
+    #googleMap
+    .contact-options
+      .mailbox
+        %form{action: "mailer.php", method: "post", name: "htmlform"}
+          %fieldset.mailer
+            %legend We want to stay in touch!
+            %input{maxlength: "50", name: "name", placeholder: "What's your name?", size: "30", type: "text"}/
+            %input{maxlength: "80", name: "email", placeholder: "And your email?", size: "30", type: "email"}/
+            %textarea{maxlength: "1000", name: "message", placeholder: "Okay, how can we help?", rows: "12"}
+            %button.btn.btn-large.btn-block.btn-success{type: "submit"}
+              Send
+              %small
+                %i.icon-envelope
+      %a.social.fb-btn{href: "http://facebook.com/pages/square-1/294748607303851", target: "_blank"}
+        %i.icon-facebook
+      %a.social.twitter-btn{href: "https://twitter.com/sq1_nutrition", target: "_blank"}
+        %i.icon-twitter
+      %a.social.pin-btn{href: "http://pinterest.com/sq1nutrition/", target: "_blank"}
+        %i.icon-pinterest
+      %a.social.mail-btn{href: "mailto:jen@square1nutrition.com?Subject=Let's%20do%20this!", target: "_blank"}
+        %i.icon-envelope
+      %a.social.phone-btn
+        %i.icon-phone
+      #tweet{style: "display:none"}
+#top
+  .beam-me-up
+    %a{href: "#wrapper"}
+      %i.icon-angle-up
+      %p Back to top
