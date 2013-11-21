@@ -6,20 +6,20 @@
     display: inline-block;
     text-align: center;
     padding: 1em 2em;
-    border: 1px solid $white;
+    border: 1px solid @white;
     border-radius: 4px;
     margin-top: 1em;
     text-shadow: none;
     -webkit-transition: 340ms color, 340ms background, 210ms margin,  210ms -webkit-transform;
     &:hover {
-      background: $white;
+      background: @white;
       color: #333;
       -webkit-transition: 340ms color, 340ms background, 210ms margin,  210ms -webkit-transform;
     }
     &:active, &:focus {
       color: #333;
-      background: darken($white, 8%);
-      box-shadow: 0 2px 2px darken($white, 21%) inset;
+      background: darken(@white, 8%);
+      box-shadow: 0 2px 2px darken(@white, 21%) inset;
       -webkit-transition: 340ms color, 340ms background, 210ms margin,  210ms -webkit-transform;
       -webkit-transform: translate(0,1px);
     }
@@ -51,16 +51,16 @@
 .glass {
   width: 100%;
   padding-bottom: 100%;
-  background-image: -webkit-linear-gradient(top, darken($white,5%) 0%,darken($white, 8%) 100%);
-  -webkit-mask: url(../../img/sprite.svg);
+  background-image: -webkit-linear-gradient(top, darken(@white,5%) 0%,darken(@white, 8%) 100%);
+  -webkit-mask: url('@{imgPath}sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 100% 0;
 }
 .juice {
   width: 100%;
   padding-bottom: 100%;
-  background-image: -webkit-linear-gradient(top, $orange 0%,darken($orange, 13%) 100%);
-  -webkit-mask: url(../../img/sprite.svg);
+  background-image: -webkit-linear-gradient(top, @orange 0%,darken(@orange, 13%) 100%);
+  -webkit-mask: url('@{imgPath}sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 100% 100%;
   position: absolute;
@@ -71,16 +71,16 @@
 .cal {
   width: 100%;
   padding-bottom: 100%;
-  background-image: -webkit-linear-gradient(top, darken($white,5%) 0%,darken($white, 8%) 100%);
-  -webkit-mask: url(../../img/sprite.svg);
+  background-image: -webkit-linear-gradient(top, darken(@white,5%) 0%,darken(@white, 8%) 100%);
+  -webkit-mask: url('@{imgPath}sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 0 0;
 }
 .day {
   width: 100%;
   padding-bottom: 100%;
-  background-image: -webkit-linear-gradient(top, $green 0%,darken($green, 13%) 100%);
-  -webkit-mask: url(../../img/sprite.svg);
+  background-image: -webkit-linear-gradient(top, @green 0%,darken(@green, 13%) 100%);
+  -webkit-mask: url('@{imgPath}sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 0 100%;
   position: absolute;
