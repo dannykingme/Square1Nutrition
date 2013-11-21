@@ -29,6 +29,6 @@
             transform: scale3d(@size, @size, @size);
 }
 .rotate3d(@deg: 0) {
-  -webkit-transform: rotate(0, 0, 1, @{deg}deg);
-          transform: rotate(0, 0, 1, @{deg}deg);
+  -webkit-transform: rotate3d('0, 0, 1, @{deg}deg');
+          transform: rotate3d('0, 0, 1, @{deg}deg');
 }
