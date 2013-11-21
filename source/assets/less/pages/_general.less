@@ -17,7 +17,8 @@
   &:before {
     box-shadow: 3px 5px 8px rgba(0,0,0,.55), 0 -1px 0 #ccc, -1px 0 0 #ccc;
     top: 1px;
-    -webkit-transform: rotate(-2deg);
+    // -webkit-transform: rotate(-2deg);
+    .rotate3d(-2);
     z-index: 1;
   }
   &:after {
@@ -27,7 +28,8 @@
 }
 .landscape {
   top: 1em;
-  -webkit-transform: rotate(70deg);
+  // -webkit-transform: rotate(70deg);
+  .rotate3d(70);
   .photo {
     background-image: url("@{imgPath}land.jpg");
     z-index: 2;
@@ -35,7 +37,8 @@
   &:before {
     box-shadow: 3px 5px 8px rgba(0,0,0,.55), 0 -1px #ccc, -1px 0 0 #ccc;
     top: 1px;
-    -webkit-transform: rotate(-2deg);
+    // -webkit-transform: rotate(-2deg);
+    .rotate3d(-2);
     z-index: 1;
   }
   &:after {
