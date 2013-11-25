@@ -1,5 +1,4 @@
 body {
-
   color: @light;
   margin: 0;
   height: 100%;
@@ -10,93 +9,62 @@ body {
   padding-bottom: 0;
   text-decoration: none;
   background-color: @white;
-
   -webkit-backface-visibility: hidden;
-
 }
-
 a {
-
   color: @white;
              text-decoration: none;
   &:hover  { text-decoration: none; }
   &:active { text-decoration: none; }
   &:focus  { text-decoration: none; }
-
 }
-
 h1, h2, h3, h4, h5, h6 { text-rendering: optimizelegibility; }
-
 h1 {
-
   font-size   : 4em;
   font-family : 'Museo', 'SourceSans', sans-serif;
   font-weight : 100;
   line-height : 1;
-
 }
-
 h2 {
-
   color       : @white;
   font-weight :    200;
   font-size   :  2.8em;
   line-height :    1em;
   margin      : .5em 0;
-
 }
-
 strong {
-
   font-weight: 300;
   color: #eee;
-
 }
-
 span {
-
   color: @orange;
   font-family: "SourceSans", sans-serif;
   font-weight: 400;
-
 }
-
 .wrapper {
-
   overflow: hidden;
   background: url('@{imgPath}bkg.svg');
-
 }
-
 .intro {
-
   background: url('@{imgPath}bkg.svg') 1px;
-
 }
-
 .opening {
-
   background-image: url('@{imgPath}bkg-sm.png');
   overflow: hidden;
   position: relative;
   height: 100%;
   -webkit-mask: url('@{imgPath}rip.svg') repeat-x;
   -webkit-mask-position-y: 100%;
-
 }
-
 .shadow {
   width: 100%;
   height: 100%;
   position: absolute;
   width: 200%;
   margin-left: -50%;
-
   // @include grad2 (rgba(144,21,5,0),rgba(144,21,5,0.21));
   // fixme
-
 }
-
 .logo {
   width: 100%;
   height: 100%;
@@ -105,10 +73,8 @@ span {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 377px;
-
   -webkit-animation-duration: 1000ms;
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: fadeInUp;
   -webkit-animation-delay: 600ms;
-
 }
