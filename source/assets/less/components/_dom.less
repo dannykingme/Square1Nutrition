@@ -18,6 +18,7 @@ body {
   line-height: @baseLineHeight;
   color: @baseFontColor;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
 }
 a {
   color: @linkColor;
@@ -28,9 +29,9 @@ a {
     transition-duration: .15s;
   }
 }
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizelegibility;
-}
+// h1, h2, h3, h4, h5, h6 {
+//   text-rendering: optimizelegibility;
+// }
 h1 {
   font-size: 4em;
   font-family: @serifFamily;
@@ -47,9 +48,4 @@ h2 {
 strong {
   font-weight: 300;
   color: #eee;
-}
-span {
-  color: @orange;
-  font-family: "SourceSans", sans-serif;
-  font-weight: 400;
 }
