@@ -1,0 +1,3 @@
+[submodule "source/components/waypoints"]
+	path = source/components/waypoints
+	url = https://github.com/imakewebthings/jquery-waypoints.git
