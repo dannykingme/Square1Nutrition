@@ -72,6 +72,7 @@ end
 after_configuration do
   sprockets.append_path "assets/coffee"
   sprockets.append_path "vendors/waypoints"
+  sprockets.append_path "vendors/modernizr"
 end
 
 # Deployment method via Git

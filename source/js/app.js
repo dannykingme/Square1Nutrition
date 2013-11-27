@@ -3,4 +3,4 @@
 //= require "skrollr.js"
 //= require "QT.js"
 //= require "main.js"
-//= require ".../components/waypoints/waypoints.js"
+//= require "waypoints.js"

@@ -1,3 +1,6 @@
 [submodule "source/components/waypoints"]
 	path = source/vendors/waypoints
 	url = https://github.com/imakewebthings/jquery-waypoints.git
+[submodule "source/vendors/modernizr"]
+	path = source/vendors/modernizr
+	url = https://github.com/Modernizr/Modernizr.git
