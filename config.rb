@@ -69,6 +69,12 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+after_configuration do
+  sprockets.append_path "assets/coffee"
+  sprockets.append_path "vendors/waypoints"
+end
+
+# Deployment method via Git
 activate :deploy do |deploy|
   deploy.method = :git
   # Optional Settings
