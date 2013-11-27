@@ -3,15 +3,17 @@
   background: url('@{imgPath}bkg.svg');
 }
 .intro {
-  background: url('@{imgPath}bkg.svg') 1px;
+  background: url('@{imgPath}bkg.svg');
+  height: 100vh;
 }
 .opening {
   background-image: url('@{imgPath}bkg-sm.png');
   overflow: hidden;
   position: relative;
-  height: 100%;
-  -webkit-mask: url('@{imgPath}rip.svg') repeat-x;
-  -webkit-mask-position-y: 100%;
+  height: 100vh;
+  -webkit-mask-image: url('@{imgPath}rip.svg');
+  -webkit-mask-repeat: repeat-x;
+  -webkit-mask-position:0 100%;
 }
 .shadow {
   width: 100%;
