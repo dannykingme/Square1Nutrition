@@ -11,8 +11,8 @@ gem "middleman-livereload", "~> 3.1.0"
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 
 # For Deployment via Github Pages
-gem "middleman-deploy"
+gem "middleman-deploy", :require => false
 
 # LESS styling language
-gem "therubyracer" #Less dependency
-gem "less"
+gem "therubyracer", :require => false #Less dependency
+gem "less", :require => false
