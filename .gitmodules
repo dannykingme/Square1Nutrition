@@ -7,6 +7,3 @@
 [submodule "vendors/skrollr"]
 	path = vendors/skrollr
 	url = https://github.com/Prinzhorn/skrollr.git
-[submodule "vendors/jquery"]
-	path = vendors/jquery
-	url = https://github.com/dannykingme/jquery.git
