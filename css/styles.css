@@ -308,108 +308,20 @@ strong {
 @media only screen and (max-width: 320px) {
   
 }
-.about {
-  display: table;
-  margin: 13%;
-  min-height: 600px;
-}
-.photos {
-  position: relative;
-  width: 40%;
-  float: left;
-  padding-bottom: 40%;
-}
-.portrait .photo {
-  background-image: url('../assets/less/pages/../../../img/port.jpg');
-  z-index: 4;
-}
-.portrait:before {
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.55), 0 -1px 0 #cccccc, -1px 0 0 #cccccc;
-  top: 1px;
-  -webkit-transform: rotate3d('0, 0, 1, -2deg');
-  transform: rotate3d('0, 0, 1, -2deg');
-  z-index: 1;
-}
-.portrait:after {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34), 0 -1px 0 #cccccc, -1px 0 0 #cccccc;
-  z-index: 1;
-}
-.landscape {
-  top: 1em;
-  -webkit-transform: rotate3d('0, 0, 1, 70deg');
-  transform: rotate3d('0, 0, 1, 70deg');
-}
-.landscape .photo {
-  background-image: url("../assets/less/pages/../../../img/land.jpg");
-  z-index: 2;
-}
-.landscape:before {
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.55), 0 -1px #cccccc, -1px 0 0 #cccccc;
-  top: 1px;
-  -webkit-transform: rotate3d('0, 0, 1, -2deg');
-  transform: rotate3d('0, 0, 1, -2deg');
-  z-index: 1;
-}
-.landscape:after {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.34), 0 -1px #cccccc, 0 1px 0 #cccccc;
-  z-index: 1;
-}
-.portrait,
-.landscape {
-  position: absolute;
-  width: 75%;
-  padding-bottom: 100%;
-}
-.portrait:before,
-.landscape:before,
-.portrait:after,
-.landscape:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fefefe;
-  margin: 0 auto;
-  border-radius: 4% / 3%;
-}
-.portrait .photo,
-.landscape .photo {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 93% 95%;
-  background-position: center;
-}
-.portrait .folds,
-.landscape .folds {
-  width: 100%;
-  height: 100%;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0.34) 100%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0) 34%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.21) 0%, rgba(0, 0, 0, 0) 34%), -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0.21) 100%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0.21) 100%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 66%, rgba(255, 255, 255, 0.21) 100%), -webkit-linear-gradient(left, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0) 34%), -webkit-linear-gradient(top, rgba(255, 255, 255, 0.21) 0%, rgba(255, 255, 255, 0) 34%);
-  background-size: 50.25% 50%, 50% 50%, 50% 50.25%, 50.25% 50.25%,
-                       50.25% 50%, 50% 50%, 50% 50.25%, 50.25% 50.25%;
-  background-position: 0 0, 100% 0, 100% 100%, 0 100%,
-                           0 0, 100% 0, 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-}
-.bio {
-  float: right;
-  width: 60%;
-}
 .wrapper {
   overflow: hidden;
-  background: url('../assets/less/pages/../../../img/bkg.svg');
+  background: url('../assets/less/pages/index/../../../../img/bkg.svg');
 }
 .intro {
-  background: url('../assets/less/pages/../../../img/bkg.svg');
+  background: url('../assets/less/pages/index/../../../../img/bkg.svg');
   height: 100vh;
 }
 .opening {
-  background-image: url('../assets/less/pages/../../../img/bkg-sm.png');
+  background-image: url('../assets/less/pages/index/../../../../img/bkg-sm.png');
   overflow: hidden;
   position: relative;
   height: 100vh;
-  -webkit-mask-image: url('../assets/less/pages/../../../img/rip.svg');
+  -webkit-mask-image: url('../assets/less/pages/index/../../../../img/rip.svg');
   -webkit-mask-repeat: repeat-x;
   -webkit-mask-position: 0 100%;
 }
@@ -425,7 +337,7 @@ strong {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url('../assets/less/pages/../../../img/logo.svg');
+  background-image: url('../assets/less/pages/index/../../../../img/logo.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 377px;
@@ -439,7 +351,6 @@ strong {
   padding: 21% 0;
 }
 .about {
-  display: table;
   margin: 13%;
   min-height: 600px;
 }
@@ -450,7 +361,7 @@ strong {
   padding-bottom: 40%;
 }
 .portrait .photo {
-  background-image: url('../assets/less/pages/../../../img/port.jpg');
+  background-image: url('../assets/less/pages/index/../../../../img/port.jpg');
   z-index: 4;
 }
 .portrait:before {
@@ -470,7 +381,7 @@ strong {
   transform: rotate3d('0, 0, 1, 70deg');
 }
 .landscape .photo {
-  background-image: url('../assets/less/pages/../../../img/land.jpg');
+  background-image: url('../assets/less/pages/index/../../../../img/land.jpg');
   z-index: 2;
 }
 .landscape:before {
@@ -581,7 +492,7 @@ strong {
   width: 100%;
   padding-bottom: 100%;
   background-image: -webkit-linear-gradient(top, #f1f1f1 0%, #eaeaea 100%);
-  -webkit-mask: url('../assets/less/pages/../../../img/sprite.svg');
+  -webkit-mask: url('../assets/less/pages/index/../../../../img/sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 100% 0;
 }
@@ -589,7 +500,7 @@ strong {
   width: 100%;
   padding-bottom: 100%;
   background-image: -webkit-linear-gradient(top, #ee8844 0%, #dc6414 100%);
-  -webkit-mask: url('../assets/less/pages/../../../img/sprite.svg');
+  -webkit-mask: url('../assets/less/pages/index/../../../../img/sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 100% 100%;
   position: absolute;
@@ -601,7 +512,7 @@ strong {
   width: 100%;
   padding-bottom: 100%;
   background-image: -webkit-linear-gradient(top, #f1f1f1 0%, #eaeaea 100%);
-  -webkit-mask: url('../assets/less/pages/../../../img/sprite.svg');
+  -webkit-mask: url('../assets/less/pages/index/../../../../img/sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 0 0;
 }
@@ -609,7 +520,7 @@ strong {
   width: 100%;
   padding-bottom: 100%;
   background-image: -webkit-linear-gradient(top, #62c462 0%, #3ea63e 100%);
-  -webkit-mask: url('../assets/less/pages/../../../img/sprite.svg');
+  -webkit-mask: url('../assets/less/pages/index/../../../../img/sprite.svg');
   -webkit-mask-size: 200%;
   -webkit-mask-position: 0 100%;
   position: absolute;
@@ -700,7 +611,7 @@ strong {
   overflow: hidden;
   position: relative;
   height: 100%;
-  -webkit-mask: url('../assets/less/pages/../../../img/rip.svg') repeat-x;
+  -webkit-mask: url('../assets/less/pages/index/../../../../img/rip.svg') repeat-x;
   -webkit-mask-position-y: -100%;
 }
 #googleMap {
@@ -749,17 +660,13 @@ strong {
 .mailbox input,
 .mailbox textarea {
   margin: 0;
-  font-weight: 300;
-  font-family: "SourceSans", sans-serif;
   width: 96%;
   min-height: 32px;
   display: inline-block;
   height: 20px;
   padding: 4px 6px;
   margin-bottom: 10px;
-  font-size: 14px;
   line-height: 20px;
-  color: #555;
   vertical-align: middle;
   background-color: #fefefe;
   border: 1px solid #ccc;
