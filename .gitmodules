@@ -10,3 +10,6 @@
 [submodule "vendors/jq"]
 	path = vendors/jq
 	url = https://github.com/dannykingme/jquery.git
+[submodule "vendors/modernizr-square1"]
+	path = vendors/modernizr-square1
+	url = https://github.com/dannykingme/Modernizr.git
