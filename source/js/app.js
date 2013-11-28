@@ -1,6 +1,6 @@
 //= require "jquery.js"
 //= require "h5bp.js"
-//= require "skrollr.js"
+//= require "skrollr/dist/skrollr.min.js"
 //= require "QT.js"
 //= require "main.js"
-//= require "waypoints.js"
+//= require "waypoints/waypoints.js"
