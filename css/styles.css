@@ -107,207 +107,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-::-moz-selection {
-  background: rgba(0, 0, 0, 0.34);
-  text-shadow: none;
-}
-::selection {
-  background: rgba(0, 0, 0, 0.34);
-  text-shadow: none;
-}
-html {
-  height: 100%;
-}
-body {
-  background-color: #080808;
-  height: 100%;
-  margin: 0;
-  font-family: "SourceSans", sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  color: #cccccc;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizelegibility;
-}
-a {
-  color: #fefefe;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out;
-}
-a:hover {
-  color: #d45555;
-  transition-duration: .15s;
-}
-h1 {
-  font-size: 4em;
-  font-family: "Museo", serif;
-  font-weight: 100;
-  line-height: 1;
-}
-h2 {
-  color: #fefefe;
-  font-weight: 200;
-  font-size: 2.8em;
-  line-height: 1em;
-  margin: .5em 0;
-}
-strong {
-  font-weight: 300;
-  color: #eee;
-}
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(34px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-  }
-}
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translateY(34px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.fadeInUp {
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
-}
-@media (min-width: 1200px) {
-  
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .about {
-    margin: 13%;
-  }
-  .photos {
-    width: 80%;
-    margin: 0 10%;
-    padding-bottom: 80%;
-  }
-  .bio {
-    width: 100%;
-  }
-  .bio h2 {
-    margin: 0;
-  }
-  .services {
-    margin: 13%;
-  }
-  .serv1,
-  .serv2 {
-    margin: 13% 0;
-  }
-  .detox,
-  .clean {
-    width: 100%;
-  }
-  .detox a,
-  .clean a {
-    display: block;
-    margin: 8% 0;
-    padding: 1.5em 2em;
-  }
-  .ico {
-    width: 60%;
-    margin: 8% 20%;
-  }
-}
-@media (max-width: 767px) {
-  .about {
-    margin: 13%;
-  }
-  .photos {
-    width: 80%;
-    margin: 0 10%;
-    padding-bottom: 80%;
-  }
-  .bio {
-    width: 100%;
-  }
-  .bio h2 {
-    margin: 0;
-  }
-  .services {
-    margin: 13%;
-  }
-  .serv1,
-  .serv2 {
-    margin: 13% 0;
-  }
-  .detox,
-  .clean {
-    width: 100%;
-  }
-  .detox a,
-  .clean a {
-    display: block;
-    margin: 8% 0;
-    padding: 1.5em 2em;
-  }
-  .ico {
-    width: 50%;
-    margin: 5% 25%;
-  }
-}
-@media (max-width: 480px) {
-  .about {
-    margin: 8%;
-  }
-  .services {
-    margin: 8%;
-  }
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-  
-}
-@media only screen and (min-width: 1824px) {
-  
-}
-@media only screen and (min-width: 1224px) {
-  
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  
-}
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  
-}
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  
-}
-@media only screen and (min-width: 321px) {
-  
-}
-@media only screen and (max-width: 320px) {
-  
-}
 .wrapper {
   overflow: hidden;
   background: url('../assets/less/pages/index/../../../../img/bkg.svg');
@@ -930,4 +729,205 @@ strong {
 .popover p,
 .popover h3 {
   color: #999;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+::-moz-selection {
+  background: rgba(0, 0, 0, 0.34);
+  text-shadow: none;
+}
+::selection {
+  background: rgba(0, 0, 0, 0.34);
+  text-shadow: none;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #080808;
+  height: 100%;
+  margin: 0;
+  font-family: "SourceSans", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #cccccc;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+a {
+  color: #fefefe;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  color: #d45555;
+  transition-duration: .15s;
+}
+h1 {
+  font-size: 4em;
+  font-family: "Museo", serif;
+  font-weight: 100;
+  line-height: 1;
+}
+h2 {
+  color: #fefefe;
+  font-weight: 200;
+  font-size: 2.8em;
+  line-height: 1em;
+  margin: .5em 0;
+}
+strong {
+  font-weight: 300;
+  color: #eee;
+}
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(34px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(34px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .about {
+    margin: 13%;
+  }
+  .photos {
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 80%;
+  }
+  .bio {
+    width: 100%;
+  }
+  .bio h2 {
+    margin: 0;
+  }
+  .services {
+    margin: 13%;
+  }
+  .serv1,
+  .serv2 {
+    margin: 13% 0;
+  }
+  .detox,
+  .clean {
+    width: 100%;
+  }
+  .detox a,
+  .clean a {
+    display: block;
+    margin: 8% 0;
+    padding: 1.5em 2em;
+  }
+  .ico {
+    width: 60%;
+    margin: 8% 20%;
+  }
+}
+@media (max-width: 767px) {
+  .about {
+    margin: 13%;
+  }
+  .photos {
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 80%;
+  }
+  .bio {
+    width: 100%;
+  }
+  .bio h2 {
+    margin: 0;
+  }
+  .services {
+    margin: 13%;
+  }
+  .serv1,
+  .serv2 {
+    margin: 13% 0;
+  }
+  .detox,
+  .clean {
+    width: 100%;
+  }
+  .detox a,
+  .clean a {
+    display: block;
+    margin: 8% 0;
+    padding: 1.5em 2em;
+  }
+  .ico {
+    width: 50%;
+    margin: 5% 25%;
+  }
+}
+@media (max-width: 480px) {
+  .about {
+    margin: 8%;
+  }
+  .services {
+    margin: 8%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  
+}
+@media only screen and (min-width: 1824px) {
+  
+}
+@media only screen and (min-width: 1224px) {
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+}
+@media only screen and (min-width: 321px) {
+  
+}
+@media only screen and (max-width: 320px) {
+  
 }
