@@ -1,5 +1,4 @@
 //= require "jq/dist/jquery.min.js"
-//= require "h5bp.js"
 //= require "skrollr/dist/skrollr.min.js"
 //= require "QT.js"
 //= require "main.js"
