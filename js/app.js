@@ -166,13 +166,6 @@ if(void 0===a){if(this.length&&(e=N.get(f),1===f.nodeType&&!M.get(f,"hasDataAttr
 	};
 
 } )( jQuery, window );
-// function thirty_pc() {
-//     var height = $(window).height();
-//     var thirtypc = (105 * height) / 100;
-//     thirtypc = parseInt(thirtypc) + 'px';
-//     $(".intro").css('height', thirtypc);
-//     $(".contact").css('height', thirtypc);
-// }
 $(document).ready(function () {
     thirty_pc();
     $(window).bind('resize', thirty_pc);
