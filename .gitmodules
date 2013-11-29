@@ -13,3 +13,9 @@
 [submodule "vendors/modernizr-square1"]
 	path = vendors/modernizr-square1
 	url = https://github.com/dannykingme/Modernizr.git
+[submodule "vendors/normalize"]
+	path = vendors/normalize
+	url = https://github.com/necolas/normalize.css.git
+[submodule "vendors/fontawesome"]
+	path = vendors/fontawesome
+	url = https://github.com/FortAwesome/font-awesome-less.git
